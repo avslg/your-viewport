@@ -7178,7 +7178,8 @@ html, body {
   height: 100%; }
 
 div.container {
-  padding-top: 2px; }
+  padding-top: 2px;
+  padding-bottom: 5px; }
   div.container div.cross {
     display: flex;
     justify-content: space-between;
