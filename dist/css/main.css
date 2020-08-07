@@ -7168,7 +7168,11 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 576px) {
   div.container div.cross span {
-    font-size: 140px !important; } }
+    font-size: 140px !important; }
+  div.height {
+    background: linear-gradient(black, black 50px, whitesmoke 50px, whitesmoke calc((100% - 50px)), black calc(100% - 50px), black 100%) !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important; } }
 
 html, body {
   height: 100%; }

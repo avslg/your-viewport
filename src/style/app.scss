@@ -36,6 +36,14 @@ $sideColor: whitesmoke;
             font-size: 140px !important;
         }
     }
+
+    div.height{
+        background: linear-gradient(black, black 50px, $sideColor 50px,
+        $sideColor calc((100% - 50px)), black (calc(100% - 50px)), black 100%)
+        !important; 
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
 }
 
 html,body {
