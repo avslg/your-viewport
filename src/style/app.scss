@@ -1,0 +1,145 @@
+$fill: #eac263;
+$body-bg: #4285f4;
+$dispColor: #FCE4EC;
+$sideColor: whitesmoke;
+// Required
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+
+
+@media (max-width: 576px) {
+    div.width{
+        background: linear-gradient(90deg, black, black 50px, $sideColor 50px,
+        $sideColor calc((100% - 50px)), black (calc(100% - 50px)), black 100%) 
+        !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    div.height{
+        background: linear-gradient(black, black 50px, $sideColor 50px,
+        $sideColor calc((100% - 50px)), black (calc(100% - 50px)), black 100%)
+        !important; 
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+
+    div.result-width , div.result-height{
+        font-size: 20px !important;
+    }
+
+}
+
+@include media-breakpoint-up(sm) { 
+    div.container div.cross{
+        span{
+            font-size: 140px !important;
+        }
+    }
+}
+
+html,body {
+    height: 100%;
+}
+
+.max { 
+    min-height: 100%;
+    height: 100%;
+}
+
+div.container{
+    padding-top: 15px;
+    div.cross{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #ecf1f3;
+
+        span{
+            font-size: 45px;
+        }
+    }
+    .row:nth-child(1){
+        height: 90%;
+        div.cross {
+            min-height: 100%;
+        }
+    }
+}
+
+div.content-blank{
+    background-color: #292828;
+    background: repeating-linear-gradient(45deg, 
+     #ecf1f3, #ecf1f3 5%,
+     #8e9aaf 5%, #8e9aaf 15%, #2a2c41 15%, #2a2c41 85%,
+     #8e9aaf 85%, #8e9aaf 95%, #ecf1f3 95%, #ecf1f3 100%
+     );
+    width: calc(100% - 30px);
+
+}
+div.content-wrapper{
+    height: 100%;
+    display: flex;
+    background-color: transparent;
+
+}
+
+.fill-grid div{
+    div.side{
+        background-color: $sideColor;
+        border: 2px black solid;
+        span{
+            color: white;
+        }
+    }
+    div.height{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        border-radius: 30% 0 0 30%;
+        background: linear-gradient(black, black 100px, $sideColor 100px,
+        $sideColor calc((100% - 100px)), black (calc(100% - 100px)), black 100%);
+        padding-top: 45px;
+        padding-bottom: 45px;
+        text-align: center;
+    }
+
+    div.width{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 30px;
+        width: calc(100% - 8px);
+        margin-left: 8px;
+        border-radius: 0 0 50% 50% / 0 0 90px 90px;
+        background: linear-gradient(90deg, black, black 100px, $sideColor 100px,
+        $sideColor calc((100% - 100px)), black (calc(100% - 100px)), black 100%);
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    .rotate-90{
+        white-space: nowrap;
+        transform: rotate(90deg);
+        word-spacing: 10px;
+    }
+    div.result-width{
+        font-size: 30px;
+        margin-top: auto; 
+        padding-right: 10px;
+    }
+    div.result-height{
+        transform: rotate(90deg);
+        font-size: 30px;
+        height: 5px;
+    }
+    div.center{
+        text-align: center;
+        p#result-text{
+            color: #b4d0fd;
+        }
+    }
+
+}
+
